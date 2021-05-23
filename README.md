@@ -9,7 +9,7 @@ Simple delivery app on e-commerce apps,
 
 ## ScreenShots
 
-<img src="https://github.com/Mohammed187/BellaOnojieFoodApp/blob/Mohammed187-screenshots/Screenshot_20210422_225245.png" height="500"> <img src="https://github.com/Mohammed187/BellaOnojieFoodApp/blob/Mohammed187-screenshots/Screenshot_20210422_225251.png" height="500"> <img src="https://github.com/Mohammed187/BellaOnojieFoodApp/blob/Mohammed187-screenshots/Screenshot_20210422_225315.png" height="500"> <img src="https://github.com/Mohammed187/BellaOnojieFoodApp/blob/Mohammed187-screenshots/Screenshot_20210422_225319.png" height="500"> <img src="https://github.com/Mohammed187/BellaOnojieFoodApp/blob/Mohammed187-screenshots/Screenshot_20210422_225332.png" height="500"> <img src="https://github.com/Mohammed187/BellaOnojieFoodApp/blob/Mohammed187-screenshots/Screenshot_20210422_225338.png" height="500"> <img src="https://github.com/Mohammed187/BellaOnojieFoodApp/blob/Mohammed187-screenshots/Screenshot_20210422_225352.png" height="500"> <img src="https://github.com/Mohammed187/BellaOnojieFoodApp/blob/Mohammed187-screenshots/Screenshot_20210422_225359.png" height="500"> 
+<img src="https://github.com/Mohammed187/FruitHub/blob/Mohammed187-patch-1/Screenshot%202021-05-23%20233641.png" height="500"> <img src="https://github.com/Mohammed187/FruitHub/blob/Mohammed187-patch-1/Screenshot%202021-05-11%20002927.png" height="500">
 
 ## Architecture
 * MVVM
