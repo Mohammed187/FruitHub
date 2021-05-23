@@ -1,6 +1,7 @@
 # Fruit Hub
 
 Fruit Hub app with Kotlin + Firebase backend.
+Supports Dark/Light Theme. 
 
 # About Project 
 Simple delivery app on e-commerce apps, 
