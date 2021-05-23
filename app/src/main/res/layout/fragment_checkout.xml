@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/bottom_checkout_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16"
+        tools:context=".fragment.CheckoutFragment">
+
+        <LinearLayout
+            android:id="@+id/details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/checkout_delivery_address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/delivery_address"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_8"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_8"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_8"
+                app:boxCornerRadiusTopStart="@dimen/dimen_8"
+                app:hintTextColor="@color/primaryColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/average_sans"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/checkout_phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:hint="@string/number_we_can_call"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_8"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_8"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_8"
+                app:boxCornerRadiusTopStart="@dimen/dimen_8"
+                app:hintTextColor="@color/primaryColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/average_sans"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/details_layout"
+            android:layout_marginTop="@dimen/dimen_32"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pay_on_delivery_btn"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:layout_weight="1"
+                android:fontFamily="@font/average_sans"
+                android:text="@string/pay_on_delivery"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                app:cornerRadius="@dimen/dimen_8" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pay_with_card_btn"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_weight="1"
+                android:fontFamily="@font/average_sans"
+                android:text="@string/pay_with_card"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                app:cornerRadius="@dimen/dimen_8" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

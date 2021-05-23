@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="order"
+            type="com.example.fruithub.model.Order" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:cardCornerRadius="@dimen/dimen_16"
+        app:cardUseCompatPadding="true"
+        app:strokeColor="@color/primaryColor"
+        app:strokeWidth="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_16">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/order_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/average_sans"
+                android:text="@{String.format(@string/order_id_model, order.id)}"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/font_24"
+                tools:text="@tools:sample/us_zipcodes" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/order_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_id"
+                android:fontFamily="@font/average_sans"
+                android:text="@{String.format(@string/order_address_model, order.address)}"
+                android:textSize="@dimen/font_18"
+                tools:text="@tools:sample/cities" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/order_created"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_address"
+                android:fontFamily="@font/average_sans"
+                android:gravity="center_vertical"
+                android:text="@{String.format(@string/order_created_model, order.created)}"
+                android:textColor="@color/textColor"
+                tools:text="@tools:sample/date/mmddyy" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/order_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_created"
+                android:drawableEnd="@mipmap/ic_order_taken"
+                android:fontFamily="@font/average_sans"
+                android:gravity="center_vertical"
+                android:text="@{String.format(@string/order_status_model, order.status)}"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/font_18"
+                tools:text="@tools:sample/lorem" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

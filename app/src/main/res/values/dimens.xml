@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+
+    <dimen name="corner_25_radius">25%</dimen>
+    <dimen name="corner_50_radius">50%</dimen>
+
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_30">30sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font16">16sp</dimen>
+    <dimen name="font_24">24sp</dimen>
+    <dimen name="dimen_55">55dp</dimen>
+
+</resources>

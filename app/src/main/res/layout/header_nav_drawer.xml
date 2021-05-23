@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mUser"
+            type="com.example.fruithub.model.User" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="@dimen/dimen_24"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:loadShapeableImage="@{mUser.image}"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nav_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_weight="1"
+            android:fontFamily="@font/average_sans"
+            android:gravity="center_vertical"
+            android:text="@{mUser.name}"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/font_22"
+            tools:text="@tools:sample/first_names" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nav_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_weight="1"
+            android:fontFamily="@font/average_sans"
+            android:text="@{mUser.mail}"
+            android:textSize="@dimen/font_18"
+            tools:text="@tools:sample/us_zipcodes" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:background="@color/primaryColor" />
+
+    </LinearLayout>
+</layout>
