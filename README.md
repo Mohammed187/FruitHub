@@ -10,7 +10,7 @@ Simple delivery app on e-commerce apps,
 
 ## ScreenShots
 
-<img src="https://raw.githubusercontent.com/Mohammed187/NectarOnlineGrocery/master/Cover.jpg" height="500"> <img src="https://github.com/Mohammed187/FruitHub/blob/Mohammed187-patch-1/Screenshot%202021-05-11%20002927.png" height="500">
+<img src="https://github.com/Mohammed187/FruitHub/blob/Mohammed187-patch-1/Screenshot%202021-05-23%20233641.png" height="500"> <img src="https://github.com/Mohammed187/FruitHub/blob/Mohammed187-patch-1/Screenshot%202021-05-11%20002927.png" height="500">
 
 ## Architecture
 * MVVM
